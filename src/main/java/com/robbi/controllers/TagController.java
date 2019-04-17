@@ -37,9 +37,20 @@ public class TagController {
 		return "printRecordTag";
 	}
 	
+	
 	@RequestMapping(value = "/tagfile", method = RequestMethod.GET)
 	public String showTagFile(Model model) {
 		model.addAttribute("email", "hi@hi.com");
 		return "tagFile";
+	}
+	
+	@RequestMapping(value = "/power", method = RequestMethod.GET)
+	public String showPowerTag() {
+		return "powerTag";
+	}
+	
+	@RequestMapping(value = "/loop", method = RequestMethod.GET)
+	public String showLoopTag() {
+		return "loopTag";
 	}
 }
